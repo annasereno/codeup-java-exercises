@@ -4,11 +4,12 @@
 public class HelloWorld {
 
     public static void main(String[] args) {//shortcut main+tab
+
         //System.out.println("Hello World!");//shortcut sout+tab
-//        int myFavoriteNumber = 5;
-//        System.out.println(myFavoriteNumber);
-//        String myString = "3.14159";
-//        System.out.println(myString);
+        int myFavoriteNumber = 5;
+        System.out.println(myFavoriteNumber);
+        String myString = "3.14159";
+        System.out.println(myString);
 //        float myNumber = 3.14F;
 //        System.out.println(myNumber);
 //        int x = 5;
