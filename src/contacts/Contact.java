@@ -1,5 +1,7 @@
 package contacts;
 
+import java.util.Arrays;
+
 public class Contact {
 
     private String name;
@@ -52,6 +54,15 @@ public class Contact {
 //                name, mobile == null? "": mobile, email == null? "":email
         );
     }
+
+    public static Contact[] addContact(Contact[] contacts, Contact newContact){
+        Contact[] updatedContacts = Arrays.copyOf(contacts, contacts.length + 1);
+        updatedContacts[updatedContacts.length -1] = newContact;
+        return updatedContacts;
+    };
+
+//    public Contact(){ totalContacts++}
+
     public Contact(){
         System.out.println("New contact!");
     }
