@@ -32,6 +32,7 @@ public class Person {
         anna.sayHello();
 
 
+
         ///Understanding References: run code and see the results///
 //  1.
 //        Person person1 = new Person("John");
@@ -40,10 +41,10 @@ public class Person {
 ////        checks is person1 & 2 are equal, getName returns "John", equals() method compares the names
 //        System.out.println(person1.getName().equals(person2.getName()));// returns true
 //
-////       this line checks if person 1 & 2 are the same object(they're not). == operator checks for refrence equality, meaning if both variables are the same object
+////       this line checks if person 1 & 2 are the same object(they're not). == operator checks for reference equality, meaning if both variables are the same object
 //        System.out.println(person1 == person2);// returns false
 
-//  2.
+////  2.
 //        Person person1 = new Person("John");
 //        Person person2 = person1;
 //        System.out.println(person1 == person2);//returns true
