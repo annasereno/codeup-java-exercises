@@ -19,7 +19,7 @@ public class ContactTest {
         ibm.setEmail("contact@ibm.com");
 
         Contact mikeHoncho = new Contact("Mike Honcho", "7839990000", "mikehoncho@yahoo.com");
-//        System.out.println(mikeHoncho.display());
+        System.out.println(mikeHoncho.display());
 
         Contact shakira = new Contact("Shakira", "8982450000", "shakira@hipsdontlie.com");
 
@@ -28,15 +28,19 @@ public class ContactTest {
 
         Contact[] contacts= {mikeHoncho, rickyBobby,shakira};
 
+        Contact britney = new Contact("Britney", "7832749487", "itsbritney@b.com");
+
+        contacts = Contact.addContact(contacts, britney);
+
+
         for (Contact contact : contacts){
             System.out.printf("name: %s%n", contact.getName());
             System.out.printf("Phone: %s%n", contact.getMobile());
             System.out.println(" ");
         }
 
-        Contact britney = new Contact("Britney", "7832749487", "itsbritney@b.com");
 
-        contacts = Contact.addContact(contacts, britney);
+        System.out.println(Contact.getTotalContacts());
 
 //        System.out.println(javier.display());
 //        System.out.println(ibm.display());

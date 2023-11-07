@@ -4,9 +4,13 @@ import java.util.Arrays;
 
 public class Contact {
 
+    private static int totalContacts;
+
     private String name;
     private String mobile;
     private String email;
+
+    public static int getTotalContacts(){return totalContacts;}
 
     //setter
     //technical name :"mutator"
@@ -63,8 +67,12 @@ public class Contact {
 
 //    public Contact(){ totalContacts++}
 
+//    public Contact(){
+//        System.out.println("New contact!");
+//    }
+
     public Contact(){
-        System.out.println("New contact!");
+        totalContacts++;
     }
 
     public Contact(String name, String mobile, String email){
