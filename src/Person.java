@@ -26,7 +26,14 @@ public class Person {
         name = personName;
     }
 
-//Create a `main` method on the class that creates a new `Person` object and tests the above methods.
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
+    //Create a `main` method on the class that creates a new `Person` object and tests the above methods.
     public static void main(String[] args) {
         Person anna = new Person("Anna");
         anna.sayHello();
