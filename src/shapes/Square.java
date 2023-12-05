@@ -13,7 +13,7 @@ public class Square extends Rectangle{
 
     @Override
     public int getArea() {
-        System.out.println("square area");
+        System.out.println("Square area");
         return side * side;
     }
 

@@ -2,6 +2,21 @@ package shapes;
 
 public class Rectangle {
 
+//    //constructor
+//    public Rectangle(double length, double width){
+//        super(length, width);
+//    }
+//
+//    public double getPerimeter(){
+//        return 0;
+//    }
+//
+//    public double getArea(){
+//        return 0;
+//    }
+
+
+
     //create protected PROPERTIES for length and width
     protected int length;
     protected int width;

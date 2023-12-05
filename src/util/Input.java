@@ -14,7 +14,7 @@ public class Input {
 
     //methods
     String getString() {
-        System.out.println("Enter your text");
+//        System.out.println("Enter your text");
         return scanner.nextLine();//wants to return a String from the Scanner object
     };
 
@@ -39,9 +39,18 @@ public class Input {
     }
 
 
+//    Integer.valueOf(String s);
+//
+//    Double.valueOf(String s);
     int getInt() {
-        System.out.println("enter a number");
-        return scanner.nextInt();
+        int x;
+        try {
+            System.out.println("enter a number");
+            //scanner.nextInt();
+        } catch (NumberFormatException e){
+            System.out.println("not a number");
+        }
+        return Integer.parseInt(getString());
     };
 
     double getDouble(double min, double max) {
@@ -55,7 +64,8 @@ public class Input {
 
     double getDouble() {
         System.out.println("Enter a decimal number");
-        return scanner.nextDouble();
+        return Integer.parseInt(getString());
+        // scanner.nextDouble();
     };
 
 

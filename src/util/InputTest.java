@@ -8,14 +8,14 @@ public class InputTest {
 
 //        boolean userChoice = input.yesNo();
 //        System.out.println(userChoice);
-
+//
 //        int userNumber = input.getInt(5, 20);
 //        System.out.println(userNumber);
-
+//
         System.out.println(input.getInt());
-
-        System.out.println(input.getDouble(5.5 , 8.9));
-
-        System.out.println(input.getDouble());
+//
+//        System.out.println(input.getDouble(5.5 , 8.9));
+//
+//        System.out.println(input.getDouble());
     }
 }
